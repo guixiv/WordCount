@@ -1,18 +1,20 @@
 //
-//  WordsCount.hpp
+//  WordFrequency.hpp
 //  词频统计
 //
-//  Created by wenyiqian on 2018/9/9.
+//  Created by wenyiqian on 2018/9/10.
 //  Copyright © 2018年 ding. All rights reserved.
 //
 
-#ifndef WordsCount_hpp
-#define WordsCount_hpp
+#ifndef WordFrequency_hpp
+#define WordFrequency_hpp
 
 #include <stdio.h>
 #include <fstream>
 #include <cstring>
 #include <regex>
+#include <map>
+#include <hash_map>
 #include <iostream>
 #include <algorithm>
 
@@ -23,6 +25,7 @@ using namespace std;
 #define psi pair<string, int>
 #define vpsi vector<psi>
 
-long WordsCount(const char *filename);
+long wordsCount(const char *filename);
 
-#endif /* WordsCount_hpp */
+void WordsPrint(const char *filename,int num);
+#endif /* WordFrequency_hpp */

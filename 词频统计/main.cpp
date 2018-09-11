@@ -15,12 +15,13 @@
 #include "WordsCount.hpp"
 #include "CharCount.hpp"
 #include "LinesCount.hpp"
+#include "WordFrequency.hpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    //const char *FileName = "a.txt";
-    const char *FileName = argv[1];
+    const char *FileName = "a.txt";
+    //const char *FileName = argv[1];
     ifstream TextFile(FileName);
     if(!TextFile)
     {
@@ -34,7 +35,7 @@ int main(int argc, const char * argv[]) {
     cout<< "words:" << WordsNum <<endl;
     cout<< "lines:" << LinesNum <<endl;
     
-    WordsPrint(10);
+    WordsPrint(FileName,10);
     
     return 0;
 }

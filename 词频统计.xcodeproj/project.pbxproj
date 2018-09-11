@@ -11,6 +11,7 @@
 		010C5053214505B50062EDB5 /* WordsCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010C5051214505B50062EDB5 /* WordsCount.cpp */; };
 		010C50562145060F0062EDB5 /* CharCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010C50542145060F0062EDB5 /* CharCount.cpp */; };
 		010C5059214507670062EDB5 /* LinesCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010C5057214507670062EDB5 /* LinesCount.cpp */; };
+		010C505D214694D70062EDB5 /* WordFrequency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010C505B214694D70062EDB5 /* WordFrequency.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		010C5057214507670062EDB5 /* LinesCount.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinesCount.cpp; sourceTree = "<group>"; };
 		010C5058214507670062EDB5 /* LinesCount.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinesCount.hpp; sourceTree = "<group>"; };
 		010C505A21453D340062EDB5 /* a.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = a.txt; sourceTree = "<group>"; };
+		010C505B214694D70062EDB5 /* WordFrequency.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WordFrequency.cpp; sourceTree = "<group>"; };
+		010C505C214694D70062EDB5 /* WordFrequency.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WordFrequency.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				010C5057214507670062EDB5 /* LinesCount.cpp */,
 				010C5058214507670062EDB5 /* LinesCount.hpp */,
 				010C505A21453D340062EDB5 /* a.txt */,
+				010C505B214694D70062EDB5 /* WordFrequency.cpp */,
+				010C505C214694D70062EDB5 /* WordFrequency.hpp */,
 			);
 			path = "词频统计";
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				010C50562145060F0062EDB5 /* CharCount.cpp in Sources */,
 				010C504B2143EA3A0062EDB5 /* main.cpp in Sources */,
 				010C5053214505B50062EDB5 /* WordsCount.cpp in Sources */,
+				010C505D214694D70062EDB5 /* WordFrequency.cpp in Sources */,
 				010C5059214507670062EDB5 /* LinesCount.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
