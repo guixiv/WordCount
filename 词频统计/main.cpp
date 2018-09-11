@@ -21,6 +21,7 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     const char *FileName = "a.txt";
+    const char *OutName = "b.txt";
     //const char *FileName = argv[1];
     ifstream TextFile(FileName);
     if(!TextFile)
@@ -31,11 +32,15 @@ int main(int argc, const char * argv[]) {
     long LinesNum = LinesCount(FileName);
     long CharNum  = CharCount(FileName);
     
-    cout<< "characters:" << CharNum <<endl;
-    cout<< "words:" << WordsNum <<endl;
-    cout<< "lines:" << LinesNum <<endl;
+    ofstream out(OutName);
     
-    WordsPrint(FileName,10);
+    out<< "characters:" << CharNum <<endl;
+    out<< "words:" << WordsNum <<endl;
+    out<< "lines:" << LinesNum <<endl;
+    
+    WordsPrint(FileName,OutName,10);
+    
+    out.close();
     
     return 0;
 }

@@ -14,7 +14,6 @@
 #include <cstring>
 #include <regex>
 #include <map>
-#include <hash_map>
 #include <iostream>
 #include <algorithm>
 
@@ -27,5 +26,5 @@ using namespace std;
 
 long wordsCount(const char *filename);
 
-void WordsPrint(const char *filename,int num);
+void WordsPrint(const char *filename, const char *filename2, int num);
 #endif /* WordFrequency_hpp */
